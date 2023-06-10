@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../include/Json.h
+string
+-
+list
+-
+map
+-
+
+../../include/Parser.h
+string
+-
+Json.h
+../../include/Json.h
+
+/home/xdj/C语言/Json/test/test.cpp
+iostream
+-
+cstdio
+-
+string
+-
+Parser.h
+/home/xdj/C语言/Json/test/Parser.h
+Json.h
+/home/xdj/C语言/Json/test/Json.h
+
